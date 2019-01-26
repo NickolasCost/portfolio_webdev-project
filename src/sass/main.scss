@@ -1,4 +1,18 @@
 @import "partials/variables";
 @import "partials/modules";
 
-
+// Header section
+.header {
+    &__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__item {
+        margin-left: 38px;
+    }
+    &__menu {
+        height: 120px;
+        vertical-align: center;
+    }
+}
