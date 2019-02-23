@@ -1,6 +1,13 @@
 @import "partials/variables";
 @import "partials/modules";
 
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+img {
+	max-width: 100%;
+}
+
 // Header section
 .header {
     &__list {
