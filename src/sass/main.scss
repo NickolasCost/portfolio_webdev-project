@@ -8,17 +8,13 @@ img {
 	max-width: 100%;
 }
 
-// Header section
-.header {
-    &__list {
-        list-style-type: none;
-        display: flex;
-        justify-content: flex-end;
-    }
-    &__item {
-        margin-left: 38px;
-    }
-    &__menu {
-        height: 120px;
-    }
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
 }
+  
+*,
+*::before,
+*::after {                              
+    box-sizing: inherit;
+
