@@ -45,18 +45,27 @@ html {
 .container, footer {
     text-align: center;
 }
+section, .footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 
 // Секция Header
+
 .nav {
     & li {
         display: inline;
-        margin-right: 20px;
+        margin-right: 34px;
         font-size: 20px;
         font-weight: 600;
         & a {
         color: #212121;
         }
+    }
+    & :last-child {
+        margin-right: 0;
     }
     
 }
@@ -65,6 +74,9 @@ html {
     height: 120px;
     align-items: center;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 .logo {
     &__text {
@@ -74,14 +86,15 @@ html {
     }
 }
 .header {
-    background: #000 url("../img/header_bg-60.jpg") no-repeat center;
-    padding-bottom: 120px;
+    background: #212121 url("../img/header_bg-60.jpg") no-repeat center;
+    background-size: cover; 
+    padding-bottom: 60px;
     padding-top: 168px;
     &__text {
         color: #fff;
         font-size: 22px;
         font-weight: 400;
-        margin-bottom: 110px;
+        margin-bottom: 130px;
     }
     &__btn {
         color: #fff;
@@ -91,7 +104,7 @@ html {
         text-transform: uppercase;
         border: 3px solid white;
         padding: 18px 35px;
-        margin: auto 15px;
+        margin: auto 10px;
         &--blue {
             border: 3px solid $green;
             background-color: $green;
@@ -99,6 +112,9 @@ html {
 
     }
     &__icon {
+        margin-top: 110px;
         color: #fff;
+        font-size: 35px;
+        padding-left: 15px;
     }
 }
