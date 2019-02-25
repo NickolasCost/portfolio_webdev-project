@@ -2,10 +2,34 @@
 @import "partials/modules";
 
 body {
-	font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: #212121;
 }
 img {
 	max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-top: 120px;
+    margin: 0;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+a {
+    text-decoration: none;
+}
+p {
+    color: #212121;
+    font-size: 15px;
 }
 
 html {
@@ -17,4 +41,50 @@ html {
 *::before,
 *::after {                              
     box-sizing: inherit;
+}
 
+.container, footer {
+    text-align: center;
+}
+
+
+// Секция Header
+.nav {
+    & li {
+        display: inline;
+        margin-right: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        & a {
+        color: #000;
+        }
+    }
+    
+}
+.header-menu {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    &__text {
+        font-size: 25px;
+        font-weight: 700;
+        color: #000;
+    }
+}
+.header {
+    background: #000 url("../img/header_bg-60.jpg") no-repeat center;
+    &__text {
+        color: #fff;
+    }
+    &__btn {
+        color: #fff;
+        box-sizing: border-box;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+    }
+}
