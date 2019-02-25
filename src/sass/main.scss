@@ -22,6 +22,7 @@ h2 {
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 2px;
+
 }
 a {
     text-decoration: none;
@@ -29,6 +30,8 @@ a {
 p {
     color: #212121;
     font-size: 15px;
+    max-width: 620px;
+    margin: 0 auto;
 }
 
 html {
@@ -49,6 +52,10 @@ section, .footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    padding-top: 95px;
+}
+.row {
+    display: flex;
 }
 
 
@@ -116,5 +123,12 @@ section, .footer {
         color: #fff;
         font-size: 35px;
         padding-left: 15px;
+    }
+}
+
+// About section
+.about {
+    &__item {
+        width: 260px;
     }
 }
