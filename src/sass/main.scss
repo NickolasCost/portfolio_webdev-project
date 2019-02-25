@@ -16,7 +16,6 @@ h1 {
     font-size: 60px;
     font-weight: 600;
     letter-spacing: 2px;
-    padding-top: 120px;
     margin: 0;
 }
 h2 {
@@ -56,7 +55,7 @@ html {
         font-size: 20px;
         font-weight: 600;
         & a {
-        color: #000;
+        color: #212121;
         }
     }
     
@@ -71,13 +70,18 @@ html {
     &__text {
         font-size: 25px;
         font-weight: 700;
-        color: #000;
+        color: #212121;
     }
 }
 .header {
     background: #000 url("../img/header_bg-60.jpg") no-repeat center;
+    padding-bottom: 120px;
+    padding-top: 168px;
     &__text {
         color: #fff;
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 110px;
     }
     &__btn {
         color: #fff;
@@ -85,6 +89,16 @@ html {
         font-size: 20px;
         font-weight: 700;
         text-transform: uppercase;
+        border: 3px solid white;
+        padding: 18px 35px;
+        margin: auto 15px;
+        &--blue {
+            border: 3px solid $green;
+            background-color: $green;
+        }
 
+    }
+    &__icon {
+        color: #fff;
     }
 }
