@@ -22,7 +22,9 @@ h2 {
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 2px;
-
+}
+h4 {
+    margin-bottom: 16px;  
 }
 a {
     text-decoration: none;
@@ -32,6 +34,7 @@ p {
     font-size: 15px;
     max-width: 620px;
     margin: 0 auto;
+    margin-bottom: 120px;
 }
 
 html {
@@ -56,6 +59,7 @@ section, .footer {
 }
 .row {
     display: flex;
+    justify-content: space-between;
 }
 
 
@@ -129,6 +133,25 @@ section, .footer {
 // About section
 .about {
     &__item {
-        width: 260px;
+        width: 330px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 5px;
+        & img {
+           height: 62px;
+        }
+    }
+}
+
+// Service section
+.services {
+    background-color: $green-light;
+    & h2 {
+        margin-top: 72px;
+    }
+    &__item {
+        width: 370px;
+        height: 438px;
+        background-color: #fff;
     }
 }
