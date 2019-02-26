@@ -69,6 +69,9 @@ section, .footer {
     color: #000;
     font-weight: 700;
     font-size: 20px;
+    &:hover {
+        transition: all ease 0.2s;
+    }
 }
 .light-blue_bg {
     background-color: $green-light;
@@ -171,7 +174,8 @@ section, .footer {
         &:hover {
             background-color: $green;
             color: #fff;
-            
+            box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.35);
+            transition: all ease 0.2s;
             & img {
                 filter: invert(1);
             }
@@ -181,6 +185,11 @@ section, .footer {
             & a {
                 color: #fff;
                 border: 2px solid white;
+                &:hover {
+                    background: white;
+                    border: 2px solid black;
+                    color: #000;
+                }
             }
         }
         & img {
@@ -198,4 +207,31 @@ section, .footer {
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 105px;
+}
+
+// Work Section
+
+.works {
+    & p {
+        margin-bottom: 128px;
+    }
+    &__filter {
+        display: flex;
+        justify-content: center;
+    }
+    &__btn {
+        margin: 0 10px;
+        padding: 11px 20px; 
+        min-width: 180px;
+        &--active {
+            background: $green;
+            border: 2px solid $green;
+            color: #fff;
+        }
+        &:hover {
+            background: $green;
+            border: 2px solid $green;
+            color: #fff;
+        }
+    }
 }
