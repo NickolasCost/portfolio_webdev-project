@@ -24,7 +24,7 @@ h2 {
     letter-spacing: 2px;
 }
 h4 {
-    margin-bottom: 16px;  
+    margin-bottom: 19px;  
 }
 a {
     text-decoration: none;
@@ -60,6 +60,18 @@ section, .footer {
 .row {
     display: flex;
     justify-content: space-between;
+}
+.btn {
+    box-sizing: border-box;
+    padding: 11px 14px;
+    text-transform: uppercase;
+    border: 2px solid black;
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+}
+.light-blue_bg {
+    background-color: $green-light;
 }
 
 
@@ -145,13 +157,45 @@ section, .footer {
 
 // Service section
 .services {
-    background-color: $green-light;
     & h2 {
         margin-top: 72px;
     }
     &__item {
+        padding: 50px;
+        padding-bottom: 20px;
         width: 370px;
         height: 438px;
         background-color: #fff;
+        margin: 15px;
+        max-width: 30%;
+        &:hover {
+            background-color: $green;
+            color: #fff;
+            
+            & img {
+                filter: invert(1);
+            }
+            & p {
+                color: #fff;
+            }
+            & a {
+                color: #fff;
+                border: 2px solid white;
+            }
+        }
+        & img {
+            height: 62px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        & p {
+            margin-bottom: 62px;
+            line-height: 1.7;
+        }
     }
+}
+.services-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 105px;
 }
