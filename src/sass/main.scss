@@ -23,6 +23,13 @@ h2 {
     font-weight: 700;
     letter-spacing: 2px;
 }
+h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 43px;
+    margin-bottom: 23px;
+}
 h4 {
     margin-bottom: 19px;  
 }
@@ -75,6 +82,9 @@ section, .footer {
 }
 .light-blue_bg {
     background-color: $green-light;
+}
+.light-grey_bg {
+    background-color: #f0f1f1;
 }
 
 
@@ -140,7 +150,7 @@ section, .footer {
             border: 3px solid $green;
             background-color: $green;
             &:hover {
-                background-color: rgba($green,0.75);
+                background-color: rgba($green,0.85);
                 border: 3px solid transparent;
             }
         }
@@ -151,8 +161,8 @@ section, .footer {
         color: #fff;
         font-size: 35px;
         padding-left: 15px;
-        & i {
-            cursor: pointer;
+        & a {
+            color: #fff;
         }
     }
 }
@@ -275,6 +285,56 @@ section, .footer {
         &:hover {
             color: #fff;
             background-color: rgba(0,0,0,0.5);
+        }
+    }
+}
+// Prices Section
+
+.prices {
+    &__item {
+        width: 370px;
+        height: 667px;
+        background: url(../img/blue_price_bg.png) no-repeat #fff;
+        letter-spacing: 1px;
+        margin-bottom: 124px;
+        &:hover {
+            box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.25);
+        }
+        & p {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 400;
+            margin-bottom: 75px;
+            & span {
+                font-size: 50px;
+                & sup {
+                    font-size: 25px;
+                    top: -16px;
+                }
+            }
+        }
+    }
+    &__list {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 22px;
+        padding-left: 0;
+        margin-bottom: 84px;
+        &-item {
+            border-bottom: 1px solid #bfbfbf;
+            max-width: 50%;
+            margin: 0 auto;
+            padding-bottom: 8px;
+            padding-top: 31px;
+        }
+    }
+    &__btn {
+        padding: 14px 22px;
+        font-weight: 600;
+        &:hover {
+            background: #00897b;
+            border: 2px solid #00897b;
+            color: #fff;
         }
     }
 }
