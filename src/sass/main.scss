@@ -131,9 +131,18 @@ section, .footer {
         border: 3px solid white;
         padding: 18px 35px;
         margin: auto 10px;
+        &:hover {
+            transition: all ease 0.2s;
+            border: 3px solid $green;
+            background-color: $green;
+        }
         &--blue {
             border: 3px solid $green;
             background-color: $green;
+            &:hover {
+                background-color: rgba($green,0.75);
+                border: 3px solid transparent;
+            }
         }
 
     }
@@ -142,6 +151,9 @@ section, .footer {
         color: #fff;
         font-size: 35px;
         padding-left: 15px;
+        & i {
+            cursor: pointer;
+        }
     }
 }
 
@@ -212,12 +224,17 @@ section, .footer {
 // Work Section
 
 .works {
+    margin-bottom: 158px;
+    &__row {
+        padding-bottom: 135px;
+    }
     & p {
         margin-bottom: 128px;
     }
     &__filter {
         display: flex;
         justify-content: center;
+        margin-bottom: 118px;
     }
     &__btn {
         margin: 0 10px;
@@ -232,6 +249,32 @@ section, .footer {
             background: $green;
             border: 2px solid $green;
             color: #fff;
+        }
+    }
+    &__item {
+        position: relative;
+        display: block;
+        margin: 15px;
+        margin-bottom: 13px;
+        max-width: 30%;
+        height: 100%;
+    }
+    &__text {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 99%;
+        font-size: 20px;
+        padding-top: 42%;
+        font-weight: 600;
+        color: transparent;
+        & span {
+            font-size: 15px;
+        }
+        &:hover {
+            color: #fff;
+            background-color: rgba(0,0,0,0.5);
         }
     }
 }
