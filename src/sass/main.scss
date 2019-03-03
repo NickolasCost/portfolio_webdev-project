@@ -346,6 +346,7 @@ section, .footer {
 }
 // Team Section
 .team {
+    padding-bottom: 116px;
     &__item {
         padding-bottom: 40px;
         & h4 {
@@ -383,4 +384,51 @@ section, .footer {
         }
     }
 
+}
+// Blog Section
+.blog {
+    &__img {
+        margin-right: 30px;
+        &--right {
+            margin-right: 0;
+        }
+    }
+    &__item {
+        display: flex;
+        text-align: left;
+        &--second {
+            justify-content: space-between;
+        }
+    }
+    &__link {
+        color: inherit;
+        cursor: pointer;
+        font-size: 25px;
+        font-weight: 600;
+        &:hover {
+            color: $green;
+        }
+    }
+    &__date {
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 21px;
+        & i {
+            margin-right: 12px;
+        }
+        & span {
+            margin-right: 40px;
+        }
+    }
+    &__text {
+        margin-top: 13px;
+        max-width: 450px;
+        &--reverse {
+            order: -1;
+        }
+    }
+    &__btn {
+       margin-top: 148px;
+       padding-bottom: 148px; 
+    }
 }
