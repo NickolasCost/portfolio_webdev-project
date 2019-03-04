@@ -432,3 +432,46 @@ section, .footer {
        padding-bottom: 148px; 
     }
 }
+
+// Footer
+footer {
+    background: #212121 url(../img/foter_bg-80.jpg) no-repeat center;
+    background-size: cover;
+}
+.footer {
+    color: #fff;
+    & p {
+        color: #fff;
+        margin-bottom: 100px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & h4 {
+            max-width: 260px;
+            line-height: 28px;
+            margin-top: 34px;
+        }
+    }
+    &__icon {
+        margin: 0 auto;
+        background-color: $blue;
+        width: 105px;
+        height: 105px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        & img {
+            filter: invert(1);
+            align-self: center;
+
+        }
+    }
+    &__row {
+        justify-content: space-evenly;
+    }
+}
+.copywrite {
+    background-color: #fff;
+}
