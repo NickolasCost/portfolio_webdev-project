@@ -82,7 +82,7 @@ section, .footer {
     font-weight: 700;
     font-size: 20px;
     &:hover {
-        transition: all ease 0.2s;
+        transition: all ease 0.25s;
     }
 }
 .light-blue_bg {
@@ -202,7 +202,7 @@ section, .footer {
             background-color: $green;
             color: #fff;
             box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.35);
-            transition: all ease 0.2s;
+            transition: all ease 0.25s;
             & img {
                 filter: invert(1);
             }
@@ -212,11 +212,6 @@ section, .footer {
             & a {
                 color: #fff;
                 border: 2px solid white;
-                &:hover {
-                    background: white;
-                    border: 2px solid black;
-                    color: #000;
-                }
             }
         }
         & img {
@@ -291,6 +286,7 @@ section, .footer {
         &:hover {
             color: #fff;
             background-color: rgba(0,0,0,0.5);
+            transition: all 0.1s step-end;
         }
     }
 }
@@ -305,6 +301,7 @@ section, .footer {
         margin-bottom: 124px;
         &:hover {
             box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.25);
+            transition: all 0.25s ease;
         }
         & p {
             color: #fff;
@@ -371,6 +368,7 @@ section, .footer {
             }
             &:hover {
                 background-color: $blue;
+                transition: all 0.25s ease;
             }
             & i {
                 width: 100%;
@@ -379,6 +377,7 @@ section, .footer {
                 color: $green;
                 &:hover {
                     color: #fff;
+                    transition: all 0.25s ease;
                 }
             }
         }
@@ -453,6 +452,12 @@ footer {
             line-height: 28px;
             margin-top: 34px;
         }
+        & a {
+            color: #fff;
+            &:hover {
+                color: $green;
+            }
+        }
     }
     &__icon {
         margin: 0 auto;
@@ -468,10 +473,65 @@ footer {
 
         }
     }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 1031px;
+        margin: 58px auto 77px;
+        & textarea {
+            height: 323px;
+            padding-top: 28px;
+        }
+        &_row {
+            flex-direction: row;
+            justify-content: space-between;
+            display: flex;
+        }
+        &_input {
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: #4d4d4d;
+            letter-spacing: 1px;
+            padding: 27px 21px;
+            margin-bottom: 33px;
+            &::placeholder {
+                color: #4d4d4d;
+            }
+            &--w {
+                width: 500px;
+                height: 84px;
+            }
+            &--h {
+                margin-top: 6px;
+                width: 220px;
+                margin-left: auto;
+                color: #212121;
+                font-weight: 700;
+                background-color: #fff;
+                height: 70px;
+                padding-top: 21px;
+                &[type="submit"]:hover {
+                    color: #fff;
+                    background-color: $green;
+                    cursor: pointer;
+                    transition: all 0.25s ease;
+                }
+            }
+        }
+    }
     &__row {
         justify-content: space-evenly;
     }
 }
 .copywrite {
     background-color: #fff;
+    height: 63px;
+    color: #212121;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 63px;
+    letter-spacing: 0.75px;
 }
