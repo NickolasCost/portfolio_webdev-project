@@ -201,6 +201,7 @@ section, .footer {
         background-color: #fff;
         margin-bottom: 30px;
         max-width: 33.3333%;
+        position: relative;
         &:hover {
             background-color: $green;
             color: #fff;
@@ -226,6 +227,15 @@ section, .footer {
             margin-bottom: 62px;
             line-height: 1.7;
         }
+    }
+    &__link {
+        width: 150px;
+        height: 56px;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        margin-left: -75px;
+        bottom: 20px;
     }
 }
 .services-row {
