@@ -1,6 +1,41 @@
-@media screen and (max-width:1200px) {
-    
+@media screen and (max-width:1220px) {
+    .services {
+        &__item {
+            width: 30%;
+            margin: 0 15px 30px;
+            padding: 33px;
+            & p {
+                max-width: 90%;
+            }
+        }
+        &-row {
+            justify-content: center;
+        }
+    }
 }
 @media screen and (max-width:991px) {
-    
+    .services {
+        &__item {
+            width: 48%;
+            padding: 33px 15px;
+            & p {
+                max-width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width:707px) {
+    .services {
+        &__item {
+            width: 370px;
+            margin: 0 15px 30px;
+            padding: 15px;
+            & p {
+                max-width: 100%;
+            }
+        }
+        &-row {
+            justify-content: center;
+        }
+    }
 }

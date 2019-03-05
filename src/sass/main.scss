@@ -103,6 +103,9 @@ section, .footer {
         font-weight: 600;
         & a {
         color: #212121;
+        &:hover {
+            color: $blue;
+            }
         }
     }
     & :last-child {
@@ -535,3 +538,5 @@ footer {
     line-height: 63px;
     letter-spacing: 0.75px;
 }
+
+@import "partials/media";
