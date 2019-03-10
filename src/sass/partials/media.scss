@@ -8,6 +8,22 @@
             width: 370px;
         }
     }
+    .works {
+        &__item {
+            margin: 0 15px 30px;
+        }
+    }
+    .prices {
+
+        &__item {
+            width: 31.5%;
+        }
+    }
+    .team {
+        &__social a {
+            margin-right: 25px;
+        }
+    }
 }    
 @media screen and (max-width:991px) {
     h1 {
@@ -23,6 +39,21 @@
         & li {
             font-size: 17px;
             margin-right: 20px;
+        }
+    }
+    .prices {
+        & .row {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__item {
+            margin-right: 30px;
+            width: 370px;
+        }
+    }
+    .team {
+        &__social a {
+            margin-right: 2px;
         }
     }
 }
@@ -49,6 +80,19 @@
         &__item {
             & p {
                 margin-bottom: 60px;
+            }
+        }
+    }
+    .team {
+        &__social a {
+            width: 30px;
+            height: 30px;
+            box-sizing: border-box;
+            & i {
+                box-sizing: border-box;
+                font-size: 20px;
+                line-height: 20px;
+                height: 50%;
             }
         }
     }
